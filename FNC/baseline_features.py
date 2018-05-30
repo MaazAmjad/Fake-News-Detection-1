@@ -18,8 +18,6 @@ def get_tokenized_lemmas(s):
 
 
 def clean(s):
-    # Cleans a string: Lowercasing, trimming, removing non-alphanumeric
-
     return " ".join(re.findall(r'\w+', s, flags=re.UNICODE)).lower()
 
 
@@ -34,8 +32,6 @@ def gen_or_load_feats(feat_fn, headlines, bodies, feature_file):
         np.save(feature_file, feats)
 
     return np.load(feature_file)
-
-
 
 
 def word_overlap_features(headlines, bodies):
