@@ -24,3 +24,4 @@ python3.4 -m pip install -r requirements.txt --upgrade
 # Dependencies/Libraries
 
 In order to run this project, please download the dataset (features and model) from this GitHub repositoryand place in the root folder.
+As the word2vector requires the file to be input in the txt format, we use the file csv_to_txt.py to convert the input file from csv to txt format. As the LSTM model requires that the input is not sparse, we find the designated length of the Headline and Body text to be used by tensor. Average length for Body text is 424 and for the Headline it is 45.
