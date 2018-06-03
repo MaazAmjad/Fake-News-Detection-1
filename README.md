@@ -1,4 +1,4 @@
-# Fake News Challenge - 2
+# Fake News Challenge - Brogrammers
 
 Greetings from Team "Brogrammers". This is the repository developed as a solution to Fake News Challenge (http://www.fakenewschallenge.org) by the team comprising of John Fantell, Yibo Chai, and Rishap Sharma. 
 
@@ -21,7 +21,8 @@ python>=3.4.0
 python3.4 -m pip install -r requirements.txt --upgrade
 
 
-# Dependencies/Libraries
+# Dependencies
 
-In order to run this project, please download the dataset (features and model) from this GitHub repositoryand place in the root folder.
-As the word2vector requires the file to be input in the txt format, we use the file csv_to_txt.py to convert the input file from csv to txt format. As the LSTM model requires that the input is not sparse, we find the designated length of the Headline and Body text to be used by tensor. Average length for Body text is 424 and for the Headline it is 45.
+In order to run this project, please download the dataset (features and model) from this Google Drive folder (https://drive.google.com/open?id=1uyZd5HaZAG6dW8-Hg_5ysC9Ji2FyHaDV) and place in the root folder.
+
+Note: As the word2vector requires the file to be input in the txt format, we use the file csv_to_txt.py to convert the input file from csv to txt format. As the LSTM model requires that the input is not sparse, we find the designated length of the Headline and Body text to be used by tensor. Average length for Body text is 424 and for the Headline it is 45.
